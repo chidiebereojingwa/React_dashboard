@@ -11,6 +11,19 @@ export default function Sidebar() {
                 Sh<span>o</span>ps
             </span>
         </div>
+
+        {/* menu */}
+        <div className='menu'>
+            <div className='menuItem'>
+                <div>
+                    Icon
+                </div>
+                <span>
+                    Dashboard
+                </span>
+                </div>
+        </div>
+
     </div>
   )
 }

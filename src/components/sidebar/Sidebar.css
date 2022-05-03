@@ -26,3 +26,18 @@
 .logo>span>span {
     color: var(--pink);
 }
+
+/* menu */
+
+.menu {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    
+}
