@@ -3,7 +3,8 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-        Oji
+       <div className='AppGlass'>
+         </div>
     </div>
   );
 }
