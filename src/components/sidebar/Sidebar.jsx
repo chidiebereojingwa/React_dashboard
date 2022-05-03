@@ -1,8 +1,11 @@
 import React from "react";
 import Logo from "../../imgs/logo.png";
 import "./Sidebar.css";
-import { UilEstate } from "@iconscout/react-unicons";
-export default function Sidebar() {
+
+import { SidebarData } from "../../Data/Data";
+import { UilSignOutAlt } from '@iconscout/react-unicons';
+
+const Sidebar= () => {
   return (
     <div className="Sidebar">
       {/* logo */}
@@ -14,42 +17,25 @@ export default function Sidebar() {
       </div>
 
       {/* menu */}
-      <div className="menu">
-        <div className="menuItem">
-          <div>
-            <UilEstate />
-          </div>
-          <span>Dashboard</span>
-        </div>
+      <div className="menu"> 
+      {SidebarData.map((item, index) => {
+          return (
+              <div className="menuItem" key={index}>
+                  <item.icon/>
+                  <span>
+                      {item.heading}
+                  </span>
+              </div>
+          )
+      })} 
 
-        <div className="menuItem">
-          <div>
-            <UilEstate />
-          </div>
-          <span>Dashboard</span>
-        </div>
+      </div>
 
-        <div className="menuItem">
-          <div>
-            <UilEstate />
-          </div>
-          <span>Dashboard</span>
-        </div>
-
-        <div className="menuItem">
-          <div>
-            <UilEstate />
-          </div>
-          <span>Dashboard</span>
-        </div>
-
-        <div className="menuItem">
-          <div>
-            <UilEstate />
-          </div>
-          <span>Dashboard</span>
-        </div>
+      <div className="menuItem">
+          <UilSignOutAlt/>
       </div>
     </div>
   );
 }
+
+export default Sidebar;
