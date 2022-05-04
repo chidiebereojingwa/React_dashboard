@@ -2,8 +2,8 @@ import React from 'react';
 import "./MainDash.css"
 const MainDash = () => {
   return (
-    <div>
-      
+    <div className='MainDash'>
+        MainDash      
     </div>
   );
 }
