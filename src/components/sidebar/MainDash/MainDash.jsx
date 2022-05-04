@@ -3,7 +3,8 @@ import "./MainDash.css"
 const MainDash = () => {
   return (
     <div className='MainDash'>
-        MainDash      
+        <h1>Dashboard</h1>    
+        <Card/> 
     </div>
   );
 }
